@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title></title>
+    <script src="UserUpdate.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <h1 class="text-center py-3">Kullanıcı Bilgileri</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex flex-column justify-content-around align-items-center py-4"><label
+                    class="form-label">Cinsiyet</label><input id="gender" class="form-control w-50" type="text" disabled/></div>
+            <div class="col-md-6 d-flex flex-column justify-content-around align-items-center py-4"><label
+                    class="form-label">Yaş</label><input class="form-control w-50" id="age" type="number"/></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 d-flex flex-column justify-content-around align-items-center py-5"><label
+                class="form-label">İsim Soyisim</label><input id="nameSurname" class="form-control w-50" type="text"/></div>
+    </div>
+</div>
+<div class="container d-flex justify-content-around align-items-center" style="height: 105px;"><a
+        class="btn-success btn d-flex justify-content-center align-items-center" onclick="updateUser()"
+        style="width: 150px;height: 60px;">Güncelle</a><a
+        class="btn-danger btn d-flex justify-content-center align-items-center" onclick="deleteUser()"
+        style="width: 150px;height: 60px;">Sil</a></div>
+
+
+</body>
+</html>
